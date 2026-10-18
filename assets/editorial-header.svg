@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="title desc">
+<title id="title">Sebastian Jara — AI Engineer</title><desc id="desc">AI Engineer drawn to thoughtful interfaces, web applications, and the science of intelligence.</desc>
+<defs><clipPath id="paper"><rect x="1" y="1" width="1198" height="288" rx="12"/></clipPath><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+<rect x="1" y="1" width="1198" height="288" rx="12" fill="#f2f0e9" stroke="#d8d3c8"/>
+<g clip-path="url(#paper)"><rect x="1" y="1" width="1198" height="288" fill="#f2f0e9" filter="url(#grain)"/><path d="M1 6H1199" stroke="#111110" stroke-width="10"/></g>
+<text x="1032" y="43" font-family="monospace" font-size="10" letter-spacing="3" fill="#827c70">ISSUE №01</text>
+<text x="68" y="145" font-family="Georgia, Times New Roman, serif" font-size="86" font-weight="bold" letter-spacing="-3" fill="#111110">Sebastian Jara</text>
+<path d="M70 173H225" stroke="#111110" stroke-width="2"/>
+<text x="70" y="212" font-family="Georgia, Times New Roman, serif" font-style="italic" font-size="25" fill="#4e4a41">AI Engineer with an eye for interfaces and a curiosity for intelligence.</text>
+<text x="70" y="266" font-family="monospace" font-size="10" letter-spacing="2.5" fill="#827c70">MEXICO CITY · ESCOM / IPN</text>
+</svg>
