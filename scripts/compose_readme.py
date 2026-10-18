@@ -94,8 +94,15 @@ parts.append(f'<path d="M64 {y}H1136" stroke="#d1cbbf"/>');y+=41
 text('issue №01 · 2026 · written in this README',size=16,font='Courier New, monospace',color='#565146');y+=45
 svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{y}" viewBox="0 0 1200 {y}" role="img" aria-labelledby="readme-title readme-desc"><title id="readme-title">Sebastian Jara — AI Engineer</title><desc id="readme-desc">Full profile: AI Engineering student at ESCOM IPN. Building a neurodynamic engine. Selected work: LearnQuest, MindfulSpace, Algoritmo Lanczos, RailSense. Open Source Winner at Hackathon Mobility and AI, November 2025. Third Place Software Development at IPN, June 2024, Uxersii. Open to work and project collaborations. Project and contact links follow this image.</desc><rect width="1200" height="{y}" fill="#f2f0e9"/>'+''.join(parts)+'</svg>'
 (ROOT/'assets/readme-cream.svg').write_text(svg)
-buttons=[('portfolio','PORTFOLIO'),('linkedin','LINKEDIN'),('email','EMAIL'),('learnquest','LEARNQUEST'),('mindfulspace','MINDFULSPACE'),('lanczos','LANCZOS'),('railsense','RAILSENSE')]
+icons = {
+    'linkedin': '<rect x="22" y="16" width="17" height="17" rx="1.5" fill="#111110"/><circle cx="26" cy="20" r="1.2" fill="#f2f0e9"/><path d="M26 23v7M30 30v-7m0 3c0-4 5-4 5 0v4" fill="none" stroke="#f2f0e9" stroke-width="1.8"/>',
+    'email': '<rect x="21" y="17" width="20" height="15" rx="1.5" fill="none" stroke="#111110" stroke-width="1.6"/><path d="m22 18 9 7 9-7" fill="none" stroke="#111110" stroke-width="1.6"/>',
+    'twitter': '<path d="M22 16h4.2L40 33h-4.2ZM38 16h2L24 33h-2Z" fill="#111110"/>',
+}
+buttons=[('portfolio','PORTFOLIO'),('linkedin','LINKEDIN'),('email','EMAIL'),('twitter','TWITTER'),('learnquest','LEARNQUEST'),('mindfulspace','MINDFULSPACE'),('lanczos','LANCZOS'),('railsense','RAILSENSE')]
 for filename,label in buttons:
-    width=max(150,len(label)*13+46)
-    (ROOT/f'assets/link-{filename}.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="48" viewBox="0 0 {width} 48" role="img" aria-label="{label}"><rect width="{width}" height="48" fill="#f2f0e9"/><text x="{width/2}" y="30" text-anchor="middle" font-family="Courier New, monospace" font-size="17" fill="#111110">{label} ↗</text></svg>')
+    icon=icons.get(filename, '')
+    width=max(150,len(label)*13+46+(28 if icon else 0))
+    text_attributes='x="52"' if icon else f'x="{width/2}" text-anchor="middle"'
+    (ROOT/f'assets/link-{filename}.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="48" viewBox="0 0 {width} 48" role="img" aria-label="{label}"><rect width="{width}" height="48" fill="#f2f0e9"/>{icon}<text {text_attributes} y="30" font-family="Courier New, monospace" font-size="17" fill="#111110">{label} ↗</text></svg>')
 print(f'Composed full README: 1200 × {y}')

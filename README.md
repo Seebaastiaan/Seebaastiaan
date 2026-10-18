@@ -3,6 +3,7 @@
 [![Portfolio](./assets/link-portfolio.svg)](https://portfolio-sebas-jara24.vercel.app/)
 [![LinkedIn](./assets/link-linkedin.svg)](https://www.linkedin.com/in/sebastianjara24/)
 [![Email](./assets/link-email.svg)](mailto:sebasjara1503@gmail.com)
+[![X / Twitter](./assets/link-twitter.svg)](https://x.com/SeebastianJara)
 
 [![LearnQuest](./assets/link-learnquest.svg)](https://github.com/Seebaastiaan/LearnQuest)
 [![MindfulSpace](./assets/link-mindfulspace.svg)](https://github.com/Seebaastiaan/MindfulSpace)
