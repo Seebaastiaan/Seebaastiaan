@@ -104,5 +104,6 @@ for filename,label in buttons:
     icon=icons.get(filename, '')
     width=max(150,len(label)*13+46+(28 if icon else 0))
     text_attributes='x="52"' if icon else f'x="{width/2}" text-anchor="middle"'
-    (ROOT/f'assets/link-{filename}.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="48" viewBox="0 0 {width} 48" role="img" aria-label="{label}"><rect width="{width}" height="48" fill="#f2f0e9"/>{icon}<text {text_attributes} y="30" font-family="Courier New, monospace" font-size="17" fill="#111110">{label} ↗</text></svg>')
+    prefix='social' if icon else 'link'
+    (ROOT/f'assets/{prefix}-{filename}.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="48" viewBox="0 0 {width} 48" role="img" aria-label="{label}"><rect width="{width}" height="48" fill="#f2f0e9"/>{icon}<text {text_attributes} y="30" font-family="Courier New, monospace" font-size="17" fill="#111110">{label} ↗</text></svg>')
 print(f'Composed full README: 1200 × {y}')
