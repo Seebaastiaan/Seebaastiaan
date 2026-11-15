@@ -19,15 +19,15 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
-      - name: Generate skyline from public contribution counts
+      - name: Read public contribution counts
         run: python3 scripts/contribution_skyline.py Seebaastiaan
-      - name: Compose full cream README
+      - name: Compose profile image
         run: python3 scripts/compose_readme.py
-      - name: Commit updated graph and source data
+      - name: Commit updated image and source data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/contribution-skyline.svg assets/contributions.json assets/readme-cream.svg assets/link-*.svg assets/social-*.svg
+          git add assets/contributions.json assets/profile-*.svg assets/row-*.svg
           if ! git diff --cached --quiet; then
             git commit -m 'Update contribution skyline'
             git push

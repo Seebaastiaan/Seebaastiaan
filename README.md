@@ -1,11 +1,1 @@
-![Sebastian Jara — AI Engineer. AI Engineering student at ESCOM / IPN. Interface design, web applications, and AI. Building a neurodynamic engine. Selected work: LearnQuest, MindfulSpace, Algoritmo Lanczos, and RailSense. Open Source Winner at Hackathon Mobility & AI, November 2025, and 3rd Place Software Development at IPN, June 2024, with Uxersii. Open to job opportunities and project collaborations.](./assets/readme-cream.svg)
-
-[![Portfolio](./assets/link-portfolio.svg)](https://portfolio-sebas-jara24.vercel.app/)
-[![LinkedIn](./assets/social-linkedin.svg)](https://www.linkedin.com/in/sebastianjara24/)
-[![Email](./assets/social-email.svg)](mailto:sebasjara1503@gmail.com)
-[![X / Twitter](./assets/social-twitter.svg)](https://x.com/SeebastianJara)
-
-[![LearnQuest](./assets/link-learnquest.svg)](https://github.com/Seebaastiaan/LearnQuest)
-[![MindfulSpace](./assets/link-mindfulspace.svg)](https://github.com/Seebaastiaan/MindfulSpace)
-[![Algoritmo Lanczos](./assets/link-lanczos.svg)](https://github.com/Seebaastiaan/AlgoritmoLanczos)
-[![RailSense](./assets/link-railsense.svg)](https://github.com/AxolutionsDevs/MobilityAI-Hackaton)
+<p><img src="./assets/profile-top.svg" align="top" alt="Sebastian Jara — AI Engineer. AI Engineering student at ESCOM / IPN. Interface design, web applications, and AI. Building a neurodynamic engine."><a href="https://portfolio-sebas-jara24.vercel.app/"><img src="./assets/row-portfolio.svg" align="top" alt="Portfolio: portfolio-sebas-jara24.vercel.app"></a><a href="https://www.linkedin.com/in/sebastianjara24/"><img src="./assets/row-linkedin.svg" align="top" alt="LinkedIn: linkedin.com/in/sebastianjara24"></a><a href="mailto:sebasjara1503@gmail.com"><img src="./assets/row-email.svg" align="top" alt="Email: sebasjara1503@gmail.com"></a><a href="https://x.com/SeebastianJara"><img src="./assets/row-x.svg" align="top" alt="X / Twitter: x.com/SeebastianJara"></a><img src="./assets/profile-rest.svg" align="top" alt="Selected work: LearnQuest, MindfulSpace, Algoritmo Lanczos, and RailSense. Open Source Winner at Hackathon Mobility & AI, November 2025, and 3rd Place Software Development at IPN, June 2024, with Uxersii. Open to job opportunities and project collaborations."></p>
